@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 
+
 def islower(c):
     # ord() function returns the ASCII value of a character
     ascii_value = ord(c)
     # ASCII values for lowercase letters are from 97 ('a') to 122 ('z')
     return 97 <= ascii_value <= 122
+
 
 # Test cases
 if __name__ == "__main__":
