@@ -15,4 +15,3 @@ def fizzbuzz():
 # Test the function
 if __name__ == "__main__":
     fizzbuzz()
-
