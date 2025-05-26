@@ -1,8 +1,8 @@
 #!/usr/bin/node
 
-const x = Number.parseInt(process.argv[2]);
+const x = Number.parseInt(process.argv[2]); // Convert first argument to an integer
 
-if (Number.isNaN(x) || x <= 0) {
+if (Number.isNaN(x)) {
   console.log('Missing number of occurrences');
 } else {
   for (let i = 0; i < x; i++) {
