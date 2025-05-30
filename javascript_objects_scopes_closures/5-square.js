@@ -2,23 +2,32 @@
 const Rectangle = require('./4-rectangle');
 
 class Square extends Rectangle {
-  constructor(size) { // ✅ Removed unnecessary spaces
-    if (size <= 0 || isNaN(size)) {
-      throw new Error('Size must be a positive number');
+  constructor (size) { // ✅ Fixed space before function parentheses
+    if (size <= 0 || !Number.isInteger(size)) {
+      super(undefined, undefined); // ✅ Assigns undefined instead of throwing an error
+    } else {
+      super(size, size);
     }
-    super(size, size);
   }
 
-  print() { // ✅ Removed unnecessary spaces
-    super.print();
+  print () { // ✅ Fixed space before function parentheses
+    if (this.width === undefined || this.height === undefined) {
+      console.log('undefined');
+    } else {
+      super.print();
+    }
   }
 
-  double() { // ✅ Removed unnecessary spaces
-    super.double();
+  double () { // ✅ Fixed space before function parentheses
+    if (this.width !== undefined && this.height !== undefined) {
+      super.double();
+    }
   }
 
-  rotate() { // ✅ Removed unnecessary spaces
-    [this.width, this.height] = [this.height, this.width];
+  rotate () { // ✅ Fixed space before function parentheses
+    if (this.width !== undefined && this.height !== undefined) {
+      [this.width, this.height] = [this.height, this.width];
+    }
   }
 }
 
