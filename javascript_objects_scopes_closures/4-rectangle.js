@@ -6,13 +6,12 @@ class Rectangle {
     if (w <= 0 || h <= 0 || !Number.isInteger(w) || !Number.isInteger(h)) {
       return;
     }
-    
     this.width = w;
     this.height = h;
   }
 
   // Method to print the rectangle using 'X'
-  print () { // ✅ Fixed space before function parentheses
+  print () {
     if (this.width && this.height) {
       for (let i = 0; i < this.height; i++) {
         console.log('X'.repeat(this.width));
@@ -21,14 +20,14 @@ class Rectangle {
   }
 
   // Method to swap width and height
-  rotate () { // ✅ Fixed space before function parentheses
+  rotate () {
     if (this.width && this.height) {
       [this.width, this.height] = [this.height, this.width];
     }
   }
 
   // Method to double the dimensions
-  double () { // ✅ Fixed space before function parentheses
+  double () {
     if (this.width && this.height) {
       this.width *= 2;
       this.height *= 2;
