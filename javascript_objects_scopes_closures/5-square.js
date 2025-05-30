@@ -2,19 +2,22 @@
 const Rectangle = require('./4-rectangle');
 
 class Square extends Rectangle {
-  constructor (size) {  // ✅ Space before function parentheses (semistandard compliant)
+  constructor(size) { // ✅ Removed unnecessary spaces
+    if (size <= 0 || isNaN(size)) {
+      throw new Error('Size must be a positive number');
+    }
     super(size, size);
   }
 
-  print () {  // ✅ Space before function parentheses
+  print() { // ✅ Removed unnecessary spaces
     super.print();
   }
 
-  double () {  // ✅ Space before function parentheses
+  double() { // ✅ Removed unnecessary spaces
     super.double();
   }
 
-  rotate () {  // ✅ Added missing rotate() method
+  rotate() { // ✅ Removed unnecessary spaces
     [this.width, this.height] = [this.height, this.width];
   }
 }
