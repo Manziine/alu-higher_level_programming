@@ -1,0 +1,6 @@
+
+u must use the class notation for defining your class and extends The constructor must take 1 argument: size The constructor of Rectangle must be called (by using super()) guillaume@ubuntu:~/$ cat 5-main.js #!/usr/bin/node const Square = require('./5-square');
+const s1 = new Square(4); s1.print(); s1.double(); s1.print();
+guillaume@ubuntu:/$ Repo:
+GitHub repository: alu-higher_level_programming Directory: javascript_objects_scopes_closures File: 5-square.js
+
